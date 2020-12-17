@@ -27,4 +27,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func sceneDidBecomeActive(_ scene: UIScene) {
         appEventsHandler?.sceneDidBecomeActive()
     }
+
+    func sceneWillResignActive(_ scene: UIScene) {
+        appEventsHandler?.sceneWillResignActive()
+    }
 }
