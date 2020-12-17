@@ -9,9 +9,8 @@ import SwiftUI
 
 @main
 struct VIP_SwiftUIApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appdelegate
     var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+        WindowGroup {}
     }
 }
