@@ -47,4 +47,3 @@ extension Publisher where Output == URLSession.DataTaskPublisher.Output {
             .eraseToAnyPublisher()
     }
 }
-

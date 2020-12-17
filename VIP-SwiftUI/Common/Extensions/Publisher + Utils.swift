@@ -8,7 +8,6 @@
 import Combine
 import Foundation
 
-
 // MARK: Extract error
 extension Publisher {
     func extractUnderlyingError() -> Publishers.MapError<Self, Failure> {

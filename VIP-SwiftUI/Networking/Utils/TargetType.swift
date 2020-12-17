@@ -14,6 +14,7 @@ protocol TargetType {
     var path: String { get }
     var method: String { get }
     var headers: [String: String]? { get }
+    
     func body() throws -> Data?
 }
 

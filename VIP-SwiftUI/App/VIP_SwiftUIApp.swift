@@ -7,8 +7,9 @@
 
 import SwiftUI
 
+//swiftlint:disable weak_delegate
 @main
-struct VIP_SwiftUIApp: App {
+struct VIPSwiftUIApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appdelegate
     var body: some Scene {
         WindowGroup {}

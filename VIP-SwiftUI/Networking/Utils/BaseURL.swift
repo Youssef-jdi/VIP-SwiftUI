@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct BaseURL {
+enum BaseURL {
     static let apiURL: String = "https://api-nodejs-todolist.herokuapp.com"
 }

@@ -10,7 +10,6 @@ import SwiftUI
 
 typealias Store<State> = CurrentValueSubject<State, Never>
 
-
 struct AppState: Equatable {
     var system = System()
 }

@@ -23,8 +23,6 @@ struct MovieListView: View {
     }
 }
 
-
-
 extension MovieListView {
     public static func build() -> some View {
         let interactor = MovieListInteractor()
