@@ -31,3 +31,11 @@ extension EnvironmentValues {
         set { self[DIContainer.self] = newValue }
     }
 }
+
+#if DEBUG
+extension DIContainer {
+    static var preview: Self {
+        .init(appState: .init(AppState.preview))
+    }
+}
+#endif

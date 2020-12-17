@@ -52,8 +52,8 @@
       </BuildableProductRunnable>
       <EnvironmentVariables>
          <EnvironmentVariable
-            key = "App Environment"
-            value = "You can fuck off now"
+            key = "APP_IS_RUNNING_TEST"
+            value = "NO"
             isEnabled = "YES">
          </EnvironmentVariable>
       </EnvironmentVariables>

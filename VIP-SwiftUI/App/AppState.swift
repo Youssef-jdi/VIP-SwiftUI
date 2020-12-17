@@ -24,3 +24,13 @@ extension AppState {
         var keyboardHeight: CGFloat = 0
     }
 }
+
+#if DEBUG
+extension AppState {
+    static var preview: AppState {
+        var state = AppState()
+        state.system.isActive = true
+        return state
+    }
+}
+#endif

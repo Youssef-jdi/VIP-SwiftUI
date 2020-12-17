@@ -27,6 +27,7 @@
 		AAA2033E258B8856003B4FA7 /* BaseURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA2033D258B8856003B4FA7 /* BaseURL.swift */; };
 		AAA20341258B8C5C003B4FA7 /* Publisher + Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA20340258B8C5C003B4FA7 /* Publisher + Utils.swift */; };
 		AAA20346258B8D71003B4FA7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA20345258B8D71003B4FA7 /* ContentView.swift */; };
+		AAA2034F258BA599003B4FA7 /* ProcessInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA2034E258BA599003B4FA7 /* ProcessInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		AAA2033D258B8856003B4FA7 /* BaseURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseURL.swift; sourceTree = "<group>"; };
 		AAA20340258B8C5C003B4FA7 /* Publisher + Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher + Utils.swift"; sourceTree = "<group>"; };
 		AAA20345258B8D71003B4FA7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AAA2034E258BA599003B4FA7 /* ProcessInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				AA46BAA4258AC09A00B91585 /* Store.swift */,
 				AA46BAAB258ACCB800B91585 /* View+Inject.swift */,
 				AAA20340258B8C5C003B4FA7 /* Publisher + Utils.swift */,
+				AAA2034E258BA599003B4FA7 /* ProcessInfo.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -361,6 +364,7 @@
 				AAA2033A258B8730003B4FA7 /* Client.swift in Sources */,
 				AA46BAA0258ABF5C00B91585 /* AppState.swift in Sources */,
 				AA6B743E258A31980019E6D8 /* MovieListInteractor.swift in Sources */,
+				AAA2034F258BA599003B4FA7 /* ProcessInfo.swift in Sources */,
 				AAA20341258B8C5C003B4FA7 /* Publisher + Utils.swift in Sources */,
 				AA6B741A258A2DFA0019E6D8 /* VIP_SwiftUIApp.swift in Sources */,
 				AA6B7435258A30370019E6D8 /* SceneDelegate.swift in Sources */,
