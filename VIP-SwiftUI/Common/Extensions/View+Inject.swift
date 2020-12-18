@@ -11,8 +11,12 @@ import SwiftUI
 
 extension View {
 
-    func inject(_ appState: AppState) -> some View {
-        let container = DIContainer(appState: .init(appState))
+    func inject
+    (
+        _ appState: AppState,
+        _ movieListDi: DIContainer.MovieListDI
+    ) -> some View {
+        let container = DIContainer(appState: .init(appState), movieListDI: movieListDi)
         return inject(container)
     }
 

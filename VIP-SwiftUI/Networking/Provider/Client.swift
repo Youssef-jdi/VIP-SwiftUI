@@ -10,7 +10,6 @@ import Combine
 
 protocol Client {
     var session: URLSession { get }
-    var baseURL: String { get }
     var bgQueue: DispatchQueue { get }
 }
 

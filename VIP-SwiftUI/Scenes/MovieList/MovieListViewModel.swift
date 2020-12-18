@@ -7,6 +7,6 @@
 
 import SwiftUI
 
-class MovieListState: ObservableObject {
+class MovieListViewModel: ObservableObject {
     @Published var a: Int = 0
 }

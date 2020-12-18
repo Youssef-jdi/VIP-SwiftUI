@@ -20,7 +20,8 @@
 		AA6B743A258A318A0019E6D8 /* MovieListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6B7439258A318A0019E6D8 /* MovieListView.swift */; };
 		AA6B743E258A31980019E6D8 /* MovieListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6B743D258A31980019E6D8 /* MovieListInteractor.swift */; };
 		AA6B7441258A31A50019E6D8 /* MovieListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6B7440258A31A50019E6D8 /* MovieListPresenter.swift */; };
-		AA6B7444258A31B70019E6D8 /* MovieListState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6B7443258A31B70019E6D8 /* MovieListState.swift */; };
+		AA6B7444258A31B70019E6D8 /* MovieListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6B7443258A31B70019E6D8 /* MovieListViewModel.swift */; };
+		AA86BF02258CEF3E007FD274 /* MovieListDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA86BF01258CEF3E007FD274 /* MovieListDI.swift */; };
 		AAA20335258B7AFE003B4FA7 /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA20334258B7AFE003B4FA7 /* TargetType.swift */; };
 		AAA2033A258B8730003B4FA7 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA20339258B8730003B4FA7 /* Client.swift */; };
 		AAA2033E258B8856003B4FA7 /* BaseURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA2033D258B8856003B4FA7 /* BaseURL.swift */; };
@@ -29,6 +30,7 @@
 		AAA2034F258BA599003B4FA7 /* ProcessInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA2034E258BA599003B4FA7 /* ProcessInfo.swift */; };
 		AAA20352258BA89F003B4FA7 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA20351258BA89F003B4FA7 /* AppEnvironment.swift */; };
 		AAA20355258BA8DC003B4FA7 /* AppEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA20354258BA8DC003B4FA7 /* AppEventHandler.swift */; };
+		AAA20363258BB6A3003B4FA7 /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA20362258BB6A3003B4FA7 /* MovieService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,7 +51,8 @@
 		AA6B7439258A318A0019E6D8 /* MovieListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListView.swift; sourceTree = "<group>"; };
 		AA6B743D258A31980019E6D8 /* MovieListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListInteractor.swift; sourceTree = "<group>"; };
 		AA6B7440258A31A50019E6D8 /* MovieListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListPresenter.swift; sourceTree = "<group>"; };
-		AA6B7443258A31B70019E6D8 /* MovieListState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListState.swift; sourceTree = "<group>"; };
+		AA6B7443258A31B70019E6D8 /* MovieListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewModel.swift; sourceTree = "<group>"; };
+		AA86BF01258CEF3E007FD274 /* MovieListDI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListDI.swift; sourceTree = "<group>"; };
 		AAA20334258B7AFE003B4FA7 /* TargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetType.swift; sourceTree = "<group>"; };
 		AAA20339258B8730003B4FA7 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		AAA2033D258B8856003B4FA7 /* BaseURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseURL.swift; sourceTree = "<group>"; };
@@ -58,6 +61,7 @@
 		AAA2034E258BA599003B4FA7 /* ProcessInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessInfo.swift; sourceTree = "<group>"; };
 		AAA20351258BA89F003B4FA7 /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
 		AAA20354258BA8DC003B4FA7 /* AppEventHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEventHandler.swift; sourceTree = "<group>"; };
+		AAA20362258BB6A3003B4FA7 /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,7 +188,8 @@
 				AA6B7439258A318A0019E6D8 /* MovieListView.swift */,
 				AA6B743D258A31980019E6D8 /* MovieListInteractor.swift */,
 				AA6B7440258A31A50019E6D8 /* MovieListPresenter.swift */,
-				AA6B7443258A31B70019E6D8 /* MovieListState.swift */,
+				AA6B7443258A31B70019E6D8 /* MovieListViewModel.swift */,
+				AA86BF01258CEF3E007FD274 /* MovieListDI.swift */,
 			);
 			path = MovieList;
 			sourceTree = "<group>";
@@ -227,6 +232,7 @@
 		AAA20344258B8D2E003B4FA7 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				AAA20362258BB6A3003B4FA7 /* MovieService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -359,9 +365,11 @@
 				AAA2033E258B8856003B4FA7 /* BaseURL.swift in Sources */,
 				AAA20335258B7AFE003B4FA7 /* TargetType.swift in Sources */,
 				AA46BAB0258ACD7A00B91585 /* RootViewAppearance.swift in Sources */,
+				AA86BF02258CEF3E007FD274 /* MovieListDI.swift in Sources */,
 				AAA20352258BA89F003B4FA7 /* AppEnvironment.swift in Sources */,
 				AA46BAAC258ACCB800B91585 /* View+Inject.swift in Sources */,
 				AA46BAA9258ACBE700B91585 /* DIContainer.swift in Sources */,
+				AAA20363258BB6A3003B4FA7 /* MovieService.swift in Sources */,
 				AAA20346258B8D71003B4FA7 /* ContentView.swift in Sources */,
 				AA6B743A258A318A0019E6D8 /* MovieListView.swift in Sources */,
 				AA46BAA5258AC09A00B91585 /* Store.swift in Sources */,
@@ -372,7 +380,7 @@
 				AAA2034F258BA599003B4FA7 /* ProcessInfo.swift in Sources */,
 				AAA20341258B8C5C003B4FA7 /* Publisher + Utils.swift in Sources */,
 				AA6B7435258A30370019E6D8 /* SceneDelegate.swift in Sources */,
-				AA6B7444258A31B70019E6D8 /* MovieListState.swift in Sources */,
+				AA6B7444258A31B70019E6D8 /* MovieListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

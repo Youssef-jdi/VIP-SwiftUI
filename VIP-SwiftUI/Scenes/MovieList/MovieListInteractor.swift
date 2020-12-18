@@ -13,9 +13,18 @@ protocol MovieListInteractorProtcol {
 
 class MovieListInteractor: MovieListInteractorProtcol {
 
-    var presenter: MovieListPresenterProtocol?
+    private let presenter: MovieListPresenterProtocol
+    private let service: MovieServiceProtocol
+
+    init(
+        presenter: MovieListPresenterProtocol,
+        service: MovieServiceProtocol
+    ) {
+        self.presenter = presenter
+        self.service = service
+    }
 
     func buttonClicked() {
-        presenter?.presentButtonClicked()
+        presenter.presentButtonClicked()
     }
 }

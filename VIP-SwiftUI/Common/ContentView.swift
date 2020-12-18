@@ -22,7 +22,7 @@ struct ContentView: View {
                 Text("Running Tests")
             } else {
                 MovieListView
-                    .build()
+                    .build(container)
                     .inject(container)
             }
         }

@@ -12,9 +12,13 @@ protocol MovieListPresenterProtocol {
 }
 
 class MovieListPresenter: MovieListPresenterProtocol {
-    var stateModel: MovieListState?
+    private let viewModel: MovieListViewModel
 
+    init(viewModel: MovieListViewModel) {
+        self.viewModel = viewModel
+    }
+    
     func presentButtonClicked() {
-        stateModel?.a += 1
+        viewModel.a += 1
     }
 }
