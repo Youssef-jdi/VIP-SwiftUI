@@ -18,7 +18,8 @@ extension AppEnvironment {
         let appState = Store<AppState>(AppState())
         let session = configuredURLSession()
         let movieListViewDI = setupMovieListView(session: session)
-        let diContainer = DIContainer(appState: appState, movieListDI: movieListViewDI)
+        let authenticationViewDI = setupAuthenticationView(session: session)
+        let diContainer = DIContainer(appState: appState, movieListDI: movieListViewDI, authenticationDI: authenticationViewDI)
         let appEventHandler = AppEventHandler(container: diContainer)
 
         return AppEnvironment(container: diContainer, appEventHandler: appEventHandler)
@@ -40,6 +41,15 @@ extension AppEnvironment {
         let movieListViewModel = MovieListViewModel()
         let movieListPresenter = MovieListPresenter(viewModel: movieListViewModel)
         let movieListInteractor = MovieListInteractor(presenter: movieListPresenter, service: movieListService)
+        
         return .init(movieListInteractor: movieListInteractor, movieListPresenter: movieListPresenter, movieListService: movieListService, movieListViewModel: movieListViewModel)
+    }
+
+    private static func setupAuthenticationView(session: URLSession) -> DIContainer.AuthenticationDI {
+        let viewModel = AuthenticationViewModel()
+        let presenter = AuthenticationPresenter(viewModel: viewModel)
+        let interactor = AuthenticationInteractor(presenter: presenter)
+
+        return .init(authenticationInteractor: interactor, authenticationPresenter: presenter, authenticationViewModel: viewModel)
     }
 }

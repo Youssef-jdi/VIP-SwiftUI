@@ -21,7 +21,10 @@ struct ContentView: View {
             if isRunningTests {
                 Text("Running Tests")
             } else {
-                MovieListView
+//                MovieListView
+//                    .build(container)
+//                    .inject(container)
+                AuthenticationView
                     .build(container)
                     .inject(container)
             }

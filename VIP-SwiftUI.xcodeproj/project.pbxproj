@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -22,6 +22,14 @@
 		AA6B7441258A31A50019E6D8 /* MovieListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6B7440258A31A50019E6D8 /* MovieListPresenter.swift */; };
 		AA6B7444258A31B70019E6D8 /* MovieListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6B7443258A31B70019E6D8 /* MovieListViewModel.swift */; };
 		AA86BF02258CEF3E007FD274 /* MovieListDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA86BF01258CEF3E007FD274 /* MovieListDI.swift */; };
+		AA86BF08258D1BF5007FD274 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA86BF07258D1BF5007FD274 /* AuthenticationView.swift */; };
+		AA86BF0B258D1C0A007FD274 /* AuthenticationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA86BF0A258D1C0A007FD274 /* AuthenticationInteractor.swift */; };
+		AA86BF0E258D1C1C007FD274 /* AuthenticationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA86BF0D258D1C1C007FD274 /* AuthenticationPresenter.swift */; };
+		AA86BF11258D1C2C007FD274 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA86BF10258D1C2C007FD274 /* AuthenticationViewModel.swift */; };
+		AA86BF14258D1C39007FD274 /* AuthenticationDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA86BF13258D1C39007FD274 /* AuthenticationDI.swift */; };
+		AA86BF1E258D28CC007FD274 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA86BF1D258D28CC007FD274 /* R.generated.swift */; };
+		AA86BF23258D7B1E007FD274 /* AuthenticationBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA86BF22258D7B1E007FD274 /* AuthenticationBackground.swift */; };
+		AA86BF27258D7B9D007FD274 /* AuthenticationTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA86BF26258D7B9D007FD274 /* AuthenticationTab.swift */; };
 		AAA20335258B7AFE003B4FA7 /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA20334258B7AFE003B4FA7 /* TargetType.swift */; };
 		AAA2033A258B8730003B4FA7 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA20339258B8730003B4FA7 /* Client.swift */; };
 		AAA2033E258B8856003B4FA7 /* BaseURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA2033D258B8856003B4FA7 /* BaseURL.swift */; };
@@ -53,6 +61,14 @@
 		AA6B7440258A31A50019E6D8 /* MovieListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListPresenter.swift; sourceTree = "<group>"; };
 		AA6B7443258A31B70019E6D8 /* MovieListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewModel.swift; sourceTree = "<group>"; };
 		AA86BF01258CEF3E007FD274 /* MovieListDI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListDI.swift; sourceTree = "<group>"; };
+		AA86BF07258D1BF5007FD274 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
+		AA86BF0A258D1C0A007FD274 /* AuthenticationInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationInteractor.swift; sourceTree = "<group>"; };
+		AA86BF0D258D1C1C007FD274 /* AuthenticationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationPresenter.swift; sourceTree = "<group>"; };
+		AA86BF10258D1C2C007FD274 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		AA86BF13258D1C39007FD274 /* AuthenticationDI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationDI.swift; sourceTree = "<group>"; };
+		AA86BF1D258D28CC007FD274 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		AA86BF22258D7B1E007FD274 /* AuthenticationBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationBackground.swift; sourceTree = "<group>"; };
+		AA86BF26258D7B9D007FD274 /* AuthenticationTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationTab.swift; sourceTree = "<group>"; };
 		AAA20334258B7AFE003B4FA7 /* TargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetType.swift; sourceTree = "<group>"; };
 		AAA20339258B8730003B4FA7 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		AAA2033D258B8856003B4FA7 /* BaseURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseURL.swift; sourceTree = "<group>"; };
@@ -126,6 +142,7 @@
 		AA6B7418258A2DFA0019E6D8 /* VIP-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				AA86BF1D258D28CC007FD274 /* R.generated.swift */,
 				AAA20332258B79F0003B4FA7 /* Networking */,
 				AA46BAA2258AC08500B91585 /* Common */,
 				AA6B7437258A31720019E6D8 /* Scenes */,
@@ -177,6 +194,7 @@
 		AA6B7437258A31720019E6D8 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				AA86BF06258D1BD1007FD274 /* Authentication */,
 				AA6B7438258A31790019E6D8 /* MovieList */,
 			);
 			path = Scenes;
@@ -192,6 +210,28 @@
 				AA86BF01258CEF3E007FD274 /* MovieListDI.swift */,
 			);
 			path = MovieList;
+			sourceTree = "<group>";
+		};
+		AA86BF06258D1BD1007FD274 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				AA86BF21258D7AFF007FD274 /* Components */,
+				AA86BF07258D1BF5007FD274 /* AuthenticationView.swift */,
+				AA86BF0A258D1C0A007FD274 /* AuthenticationInteractor.swift */,
+				AA86BF0D258D1C1C007FD274 /* AuthenticationPresenter.swift */,
+				AA86BF10258D1C2C007FD274 /* AuthenticationViewModel.swift */,
+				AA86BF13258D1C39007FD274 /* AuthenticationDI.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		AA86BF21258D7AFF007FD274 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				AA86BF22258D7B1E007FD274 /* AuthenticationBackground.swift */,
+				AA86BF26258D7B9D007FD274 /* AuthenticationTab.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		AAA20332258B79F0003B4FA7 /* Networking */ = {
@@ -254,10 +294,12 @@
 			buildConfigurationList = AA6B7425258A2DFA0019E6D8 /* Build configuration list for PBXNativeTarget "VIP-SwiftUI" */;
 			buildPhases = (
 				7E57A33F93044ADE17CE0472 /* [CP] Check Pods Manifest.lock */,
+				AA86BF1B258D284C007FD274 /* R Swift */,
 				AA6B7412258A2DFA0019E6D8 /* Sources */,
 				AA6B7413258A2DFA0019E6D8 /* Frameworks */,
 				AA6B7414258A2DFA0019E6D8 /* Resources */,
 				AAA20349258B91A4003B4FA7 /* Swift Lint */,
+				1895E174EF4EE38DDF40D9A5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -313,6 +355,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1895E174EF4EE38DDF40D9A5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VIP-SwiftUI/Pods-VIP-SwiftUI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VIP-SwiftUI/Pods-VIP-SwiftUI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VIP-SwiftUI/Pods-VIP-SwiftUI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		7E57A33F93044ADE17CE0472 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -334,6 +393,26 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		AA86BF1B258D284C007FD274 /* R Swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = "R Swift";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
 		};
 		AAA20349258B91A4003B4FA7 /* Swift Lint */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -366,18 +445,26 @@
 				AAA20335258B7AFE003B4FA7 /* TargetType.swift in Sources */,
 				AA46BAB0258ACD7A00B91585 /* RootViewAppearance.swift in Sources */,
 				AA86BF02258CEF3E007FD274 /* MovieListDI.swift in Sources */,
+				AA86BF14258D1C39007FD274 /* AuthenticationDI.swift in Sources */,
 				AAA20352258BA89F003B4FA7 /* AppEnvironment.swift in Sources */,
 				AA46BAAC258ACCB800B91585 /* View+Inject.swift in Sources */,
+				AA86BF0E258D1C1C007FD274 /* AuthenticationPresenter.swift in Sources */,
 				AA46BAA9258ACBE700B91585 /* DIContainer.swift in Sources */,
 				AAA20363258BB6A3003B4FA7 /* MovieService.swift in Sources */,
+				AA86BF11258D1C2C007FD274 /* AuthenticationViewModel.swift in Sources */,
+				AA86BF23258D7B1E007FD274 /* AuthenticationBackground.swift in Sources */,
 				AAA20346258B8D71003B4FA7 /* ContentView.swift in Sources */,
 				AA6B743A258A318A0019E6D8 /* MovieListView.swift in Sources */,
+				AA86BF27258D7B9D007FD274 /* AuthenticationTab.swift in Sources */,
 				AA46BAA5258AC09A00B91585 /* Store.swift in Sources */,
 				AAA2033A258B8730003B4FA7 /* Client.swift in Sources */,
 				AA46BAA0258ABF5C00B91585 /* AppState.swift in Sources */,
 				AAA20355258BA8DC003B4FA7 /* AppEventHandler.swift in Sources */,
 				AA6B743E258A31980019E6D8 /* MovieListInteractor.swift in Sources */,
+				AA86BF1E258D28CC007FD274 /* R.generated.swift in Sources */,
 				AAA2034F258BA599003B4FA7 /* ProcessInfo.swift in Sources */,
+				AA86BF0B258D1C0A007FD274 /* AuthenticationInteractor.swift in Sources */,
+				AA86BF08258D1BF5007FD274 /* AuthenticationView.swift in Sources */,
 				AAA20341258B8C5C003B4FA7 /* Publisher + Utils.swift in Sources */,
 				AA6B7435258A30370019E6D8 /* SceneDelegate.swift in Sources */,
 				AA6B7444258A31B70019E6D8 /* MovieListViewModel.swift in Sources */,

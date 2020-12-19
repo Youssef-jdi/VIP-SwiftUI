@@ -14,9 +14,14 @@ extension View {
     func inject
     (
         _ appState: AppState,
-        _ movieListDi: DIContainer.MovieListDI
+        _ movieListDi: DIContainer.MovieListDI,
+        _ authenticationDI: DIContainer.AuthenticationDI
     ) -> some View {
-        let container = DIContainer(appState: .init(appState), movieListDI: movieListDi)
+        let container = DIContainer(
+            appState: .init(appState),
+            movieListDI: movieListDi,
+            authenticationDI: authenticationDI
+        )
         return inject(container)
     }
 

@@ -12,25 +12,33 @@ struct DIContainer: EnvironmentKey {
 
     let appState: Store<AppState>
     let movieListDI: MovieListDI
+    let authenticationDI: AuthenticationDI
 
     init(
         appState: Store<AppState>,
-        movieListDI: MovieListDI
+        movieListDI: MovieListDI,
+        authenticationDI: AuthenticationDI
     ) {
         self.appState = appState
         self.movieListDI = movieListDI
+        self.authenticationDI = authenticationDI
     }
 
-    init(appState: AppState, movieListDI: MovieListDI) {
+    init(
+        appState: AppState,
+        movieListDI: MovieListDI,
+        authenticationDI: AuthenticationDI
+    ) {
         self.init(
             appState: Store<AppState>(appState),
-            movieListDI: movieListDI
+            movieListDI: movieListDI,
+            authenticationDI: authenticationDI
             )
     }
 
     static var defaultValue: Self { Self.default }
 
-    private static let `default` = Self(appState: AppState(), movieListDI: .stub)
+    private static let `default` = Self(appState: AppState(), movieListDI: .stub, authenticationDI: .stub)
 }
 
 extension EnvironmentValues {
@@ -43,7 +51,7 @@ extension EnvironmentValues {
 #if DEBUG
 extension DIContainer {
     static var preview: Self {
-        .init(appState: .init(AppState.preview), movieListDI: .stub)
+        .init(appState: .init(AppState.preview), movieListDI: .stub, authenticationDI: .stub)
     }
 }
 #endif
