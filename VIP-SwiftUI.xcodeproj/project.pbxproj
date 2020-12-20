@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		941C4F8FE0DFEC305FC1E944 /* Pods_VIP_SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8200C831FFB1CD8EB265B65E /* Pods_VIP_SwiftUI.framework */; };
+		AA168FA3258E12CF00466C5F /* TabButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA168FA2258E12CF00466C5F /* TabButton.swift */; };
+		AA168FAC258E1EC200466C5F /* AuthenticationForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA168FAB258E1EC200466C5F /* AuthenticationForm.swift */; };
 		AA46BAA0258ABF5C00B91585 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA46BA9F258ABF5C00B91585 /* AppState.swift */; };
 		AA46BAA5258AC09A00B91585 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA46BAA4258AC09A00B91585 /* Store.swift */; };
 		AA46BAA9258ACBE700B91585 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA46BAA8258ACBE700B91585 /* DIContainer.swift */; };
@@ -45,6 +47,8 @@
 		261EE020ADAB37951634DB36 /* Pods-VIP-SwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIP-SwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-VIP-SwiftUI/Pods-VIP-SwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
 		623AD50A5C2B604E5B7487A3 /* Pods-VIP-SwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIP-SwiftUI.release.xcconfig"; path = "Target Support Files/Pods-VIP-SwiftUI/Pods-VIP-SwiftUI.release.xcconfig"; sourceTree = "<group>"; };
 		8200C831FFB1CD8EB265B65E /* Pods_VIP_SwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VIP_SwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA168FA2258E12CF00466C5F /* TabButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabButton.swift; sourceTree = "<group>"; };
+		AA168FAB258E1EC200466C5F /* AuthenticationForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationForm.swift; sourceTree = "<group>"; };
 		AA46BA9F258ABF5C00B91585 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		AA46BAA4258AC09A00B91585 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		AA46BAA8258ACBE700B91585 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
@@ -230,6 +234,8 @@
 			children = (
 				AA86BF22258D7B1E007FD274 /* AuthenticationBackground.swift */,
 				AA86BF26258D7B9D007FD274 /* AuthenticationTab.swift */,
+				AA168FA2258E12CF00466C5F /* TabButton.swift */,
+				AA168FAB258E1EC200466C5F /* AuthenticationForm.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -442,6 +448,7 @@
 				AA6B7431258A2F420019E6D8 /* AppDelegate.swift in Sources */,
 				AA6B7441258A31A50019E6D8 /* MovieListPresenter.swift in Sources */,
 				AAA2033E258B8856003B4FA7 /* BaseURL.swift in Sources */,
+				AA168FA3258E12CF00466C5F /* TabButton.swift in Sources */,
 				AAA20335258B7AFE003B4FA7 /* TargetType.swift in Sources */,
 				AA46BAB0258ACD7A00B91585 /* RootViewAppearance.swift in Sources */,
 				AA86BF02258CEF3E007FD274 /* MovieListDI.swift in Sources */,
@@ -466,6 +473,7 @@
 				AA86BF0B258D1C0A007FD274 /* AuthenticationInteractor.swift in Sources */,
 				AA86BF08258D1BF5007FD274 /* AuthenticationView.swift in Sources */,
 				AAA20341258B8C5C003B4FA7 /* Publisher + Utils.swift in Sources */,
+				AA168FAC258E1EC200466C5F /* AuthenticationForm.swift in Sources */,
 				AA6B7435258A30370019E6D8 /* SceneDelegate.swift in Sources */,
 				AA6B7444258A31B70019E6D8 /* MovieListViewModel.swift in Sources */,
 			);

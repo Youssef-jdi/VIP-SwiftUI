@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct AuthenticationBackground: View {
+
+    let backgroundFor: BackgroundFor
+
     var body: some View {
         LinearGradient(
             gradient: .init(
@@ -17,13 +20,18 @@ struct AuthenticationBackground: View {
                         Color(R.color.second()!),
                         Color(R.color.third()!)
                     ]),
-            startPoint: .top,
-            endPoint: .bottom)
+            startPoint: backgroundFor == .view ? .top : .leading,
+            endPoint: backgroundFor == .view ? .bottom : .trailing)
+    }
+
+    enum BackgroundFor {
+        case view
+        case button
     }
 }
 
 struct AuthenticationBackground_Previews: PreviewProvider {
     static var previews: some View {
-        AuthenticationBackground().previewLayout(.device).ignoresSafeArea(.all)
+        AuthenticationBackground(backgroundFor: .view).previewLayout(.device).ignoresSafeArea(.all)
     }
 }

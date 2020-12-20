@@ -14,18 +14,21 @@ struct AuthenticationView: View {
 
     var body: some View {
         ZStack {
-            AuthenticationBackground()
+            AuthenticationBackground(backgroundFor: .view)
                 .edgesIgnoringSafeArea(.all)
             VStack {
                 AuthenticationTab(viewModel: viewModel)
                     .background(Color.black.opacity(0.1))
                     .clipShape(Capsule())
                     .padding(.top, 25)
-                Spacer()
+                AuthenticationForm(viewModel: viewModel, submitAction: {
+                    print(viewModel.loginModel.email)
+                    print(viewModel.loginModel.pass)
+                })
             }
         }
     }
-    }
+}
 
 extension AuthenticationView {
     public static func build(_ container: DIContainer) -> some View {
