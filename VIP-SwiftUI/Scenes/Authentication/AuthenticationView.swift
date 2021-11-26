@@ -22,10 +22,16 @@ struct AuthenticationView: View {
                     .clipShape(Capsule())
                     .padding(.top, 25)
                 AuthenticationForm(viewModel: viewModel, submitAction: {
-                    print(viewModel.loginModel.email)
-                    print(viewModel.loginModel.pass)
+                    handleSubmit()
                 })
             }
+        }
+    }
+
+    private func handleSubmit() {
+        switch viewModel.openedTab {
+        case .existing: interactor.handleLogin(viewModel.loginModel)
+        case .new: interactor.handleRegister(viewModel.registerModel)
         }
     }
 }

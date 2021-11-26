@@ -17,8 +17,9 @@ extension AppEnvironment {
     static func setup() -> AppEnvironment {
         let appState = Store<AppState>(AppState())
         let session = configuredURLSession()
+        let dataValidator = setupDataValidator()
         let movieListViewDI = setupMovieListView(session: session)
-        let authenticationViewDI = setupAuthenticationView(session: session)
+        let authenticationViewDI = setupAuthenticationView(session: session, dataValidator: dataValidator)
         let diContainer = DIContainer(appState: appState, movieListDI: movieListViewDI, authenticationDI: authenticationViewDI)
         let appEventHandler = AppEventHandler(container: diContainer)
 
@@ -45,11 +46,15 @@ extension AppEnvironment {
         return .init(movieListInteractor: movieListInteractor, movieListPresenter: movieListPresenter, movieListService: movieListService, movieListViewModel: movieListViewModel)
     }
 
-    private static func setupAuthenticationView(session: URLSession) -> DIContainer.AuthenticationDI {
+    private static func setupAuthenticationView(session: URLSession, dataValidator: DataValidatorProtocol) -> DIContainer.AuthenticationDI {
         let viewModel = AuthenticationViewModel()
         let presenter = AuthenticationPresenter(viewModel: viewModel)
-        let interactor = AuthenticationInteractor(presenter: presenter)
+        let interactor = AuthenticationInteractor(presenter: presenter, dataValidator: dataValidator)
 
         return .init(authenticationInteractor: interactor, authenticationPresenter: presenter, authenticationViewModel: viewModel)
+    }
+
+    private static func setupDataValidator() -> DataValidator {
+        return .init()
     }
 }

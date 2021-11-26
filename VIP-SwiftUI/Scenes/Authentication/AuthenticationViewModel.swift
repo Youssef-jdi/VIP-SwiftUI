@@ -12,6 +12,7 @@ class AuthenticationViewModel: ObservableObject {
     @Published var openedTab: OpenedTab = .existing
     @Published var loginModel = LoginModel()
     @Published var registerModel = RegisterModel()
+    @Published var error: String = ""
 
     enum OpenedTab {
         case new

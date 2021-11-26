@@ -20,16 +20,21 @@ struct AuthenticationForm: View {
                 CustomTextField(
                     field: viewModel.openedTab == .existing ?
                         $viewModel.loginModel.email : $viewModel.registerModel.email,
-                    textfieldType: .email)
+                    textfieldType: .email,
+                    error: $viewModel.error)
                 if viewModel.openedTab == .new {
                     Divider()
-                    CustomTextField(field: $viewModel.registerModel.name, textfieldType: .name)
+                    CustomTextField(
+                        field: $viewModel.registerModel.name,
+                        textfieldType: .name,
+                        error: $viewModel.error)
                 }
                 Divider()
                 CustomTextField(
                     field: viewModel.openedTab == .existing ?
                         $viewModel.loginModel.pass : $viewModel.registerModel.pass,
-                    textfieldType: .password)
+                    textfieldType: .password,
+                    error: $viewModel.error)
             }
             .padding(.vertical)
             .padding(.horizontal, 20)
@@ -46,8 +51,9 @@ struct AuthenticationForm: View {
                     .fontWeight(.bold)
                     .padding(.vertical)
                     .frame(width: UIScreen.main.bounds.width - 100)
-            }.background(
-                AuthenticationBackground(backgroundFor: .button)
+            }.disabled(isEmpty)
+            .background(
+                isEmpty ? AnyView(disabledView) : AnyView(AuthenticationBackground(backgroundFor: .button))
             )
             .cornerRadius(8)
             .offset(y: -40)
@@ -55,40 +61,16 @@ struct AuthenticationForm: View {
             .shadow(radius: 15)
         }
     }
-}
 
-struct CustomTextField: View {
-
-    @Binding var field: String
-    var textfieldType: TextFieldType
-
-    var body: some View {
-        HStack(spacing: 15) {
-
-            Image(systemName: textfieldType.rawValue)
-                .foregroundColor(.black)
-            if textfieldType == .password {
-                SecureField("Password", text: self.$field)
-                    .foregroundColor(.black)
-
-                Button(action: {}) {
-                    Image(systemName: "eye")
-                        .foregroundColor(.black)
-                }
-            } else {
-                TextField(
-                    textfieldType == .email ?
-                        "Enter Email Address" : "Enter your name",
-                    text: self.$field)
-                    .foregroundColor(.black)
-            }
-        }.padding(.vertical, 20)
+    private var disabledView: some View {
+        return Color.gray
     }
 
-    enum TextFieldType: String {
-        case email = "envelope"
-        case password = "lock"
-        case name = "person"
+    private var isEmpty: Bool {
+        switch viewModel.openedTab {
+        case .existing: return viewModel.loginModel.email.isEmpty || viewModel.loginModel.pass.isEmpty
+        case .new: return viewModel.registerModel.email.isEmpty || viewModel.registerModel.pass.isEmpty || viewModel.registerModel.name.isEmpty
+        }
     }
 }
 

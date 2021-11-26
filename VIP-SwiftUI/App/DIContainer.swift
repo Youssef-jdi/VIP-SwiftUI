@@ -36,6 +36,15 @@ struct DIContainer: EnvironmentKey {
             )
     }
 
+    // MARK: Playground
+    struct Teapot {
+        var canTalk: Bool
+
+        static func createTeapots(count: Int, canTalk: Bool) -> [Self] {
+            return (0..<count).map { _ in Teapot(canTalk: canTalk) }
+        }
+    }
+
     static var defaultValue: Self { Self.default }
 
     private static let `default` = Self(appState: AppState(), movieListDI: .stub, authenticationDI: .stub)

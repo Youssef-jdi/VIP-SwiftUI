@@ -23,6 +23,7 @@
 		AA6B743E258A31980019E6D8 /* MovieListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6B743D258A31980019E6D8 /* MovieListInteractor.swift */; };
 		AA6B7441258A31A50019E6D8 /* MovieListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6B7440258A31A50019E6D8 /* MovieListPresenter.swift */; };
 		AA6B7444258A31B70019E6D8 /* MovieListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6B7443258A31B70019E6D8 /* MovieListViewModel.swift */; };
+		AA868A60258F8FF10053585E /* CustomTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA868A5F258F8FF10053585E /* CustomTextfield.swift */; };
 		AA86BF02258CEF3E007FD274 /* MovieListDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA86BF01258CEF3E007FD274 /* MovieListDI.swift */; };
 		AA86BF08258D1BF5007FD274 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA86BF07258D1BF5007FD274 /* AuthenticationView.swift */; };
 		AA86BF0B258D1C0A007FD274 /* AuthenticationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA86BF0A258D1C0A007FD274 /* AuthenticationInteractor.swift */; };
@@ -41,6 +42,9 @@
 		AAA20352258BA89F003B4FA7 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA20351258BA89F003B4FA7 /* AppEnvironment.swift */; };
 		AAA20355258BA8DC003B4FA7 /* AppEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA20354258BA8DC003B4FA7 /* AppEventHandler.swift */; };
 		AAA20363258BB6A3003B4FA7 /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA20362258BB6A3003B4FA7 /* MovieService.swift */; };
+		AAA37D132590E8FB00647E86 /* DataValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA37D122590E8FB00647E86 /* DataValidator.swift */; };
+		AAA37D182590F45C00647E86 /* DataError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA37D172590F45C00647E86 /* DataError.swift */; };
+		AAA37D1D2590F48900647E86 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA37D1C2590F48900647E86 /* AppError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +68,7 @@
 		AA6B743D258A31980019E6D8 /* MovieListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListInteractor.swift; sourceTree = "<group>"; };
 		AA6B7440258A31A50019E6D8 /* MovieListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListPresenter.swift; sourceTree = "<group>"; };
 		AA6B7443258A31B70019E6D8 /* MovieListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewModel.swift; sourceTree = "<group>"; };
+		AA868A5F258F8FF10053585E /* CustomTextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextfield.swift; sourceTree = "<group>"; };
 		AA86BF01258CEF3E007FD274 /* MovieListDI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListDI.swift; sourceTree = "<group>"; };
 		AA86BF07258D1BF5007FD274 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
 		AA86BF0A258D1C0A007FD274 /* AuthenticationInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationInteractor.swift; sourceTree = "<group>"; };
@@ -82,6 +87,9 @@
 		AAA20351258BA89F003B4FA7 /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
 		AAA20354258BA8DC003B4FA7 /* AppEventHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEventHandler.swift; sourceTree = "<group>"; };
 		AAA20362258BB6A3003B4FA7 /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
+		AAA37D122590E8FB00647E86 /* DataValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataValidator.swift; sourceTree = "<group>"; };
+		AAA37D172590F45C00647E86 /* DataError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataError.swift; sourceTree = "<group>"; };
+		AAA37D1C2590F48900647E86 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,9 +115,12 @@
 		AA46BAA2258AC08500B91585 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				AAA37D1B2590F47C00647E86 /* Protocols */,
+				AAA37D162590F45000647E86 /* Errors */,
+				AA46BAA3258AC08D00B91585 /* Extensions */,
+				AAA37D112590E83800647E86 /* Validator */,
 				AAA20345258B8D71003B4FA7 /* ContentView.swift */,
 				AA46BAAF258ACD7A00B91585 /* RootViewAppearance.swift */,
-				AA46BAA3258AC08D00B91585 /* Extensions */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -236,6 +247,7 @@
 				AA86BF26258D7B9D007FD274 /* AuthenticationTab.swift */,
 				AA168FA2258E12CF00466C5F /* TabButton.swift */,
 				AA168FAB258E1EC200466C5F /* AuthenticationForm.swift */,
+				AA868A5F258F8FF10053585E /* CustomTextfield.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -281,6 +293,30 @@
 				AAA20362258BB6A3003B4FA7 /* MovieService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		AAA37D112590E83800647E86 /* Validator */ = {
+			isa = PBXGroup;
+			children = (
+				AAA37D122590E8FB00647E86 /* DataValidator.swift */,
+			);
+			path = Validator;
+			sourceTree = "<group>";
+		};
+		AAA37D162590F45000647E86 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				AAA37D172590F45C00647E86 /* DataError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		AAA37D1B2590F47C00647E86 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				AAA37D1C2590F48900647E86 /* AppError.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		EFDE44322751E29FD475CB11 /* Pods */ = {
@@ -453,6 +489,7 @@
 				AA46BAB0258ACD7A00B91585 /* RootViewAppearance.swift in Sources */,
 				AA86BF02258CEF3E007FD274 /* MovieListDI.swift in Sources */,
 				AA86BF14258D1C39007FD274 /* AuthenticationDI.swift in Sources */,
+				AAA37D132590E8FB00647E86 /* DataValidator.swift in Sources */,
 				AAA20352258BA89F003B4FA7 /* AppEnvironment.swift in Sources */,
 				AA46BAAC258ACCB800B91585 /* View+Inject.swift in Sources */,
 				AA86BF0E258D1C1C007FD274 /* AuthenticationPresenter.swift in Sources */,
@@ -464,11 +501,14 @@
 				AA6B743A258A318A0019E6D8 /* MovieListView.swift in Sources */,
 				AA86BF27258D7B9D007FD274 /* AuthenticationTab.swift in Sources */,
 				AA46BAA5258AC09A00B91585 /* Store.swift in Sources */,
+				AAA37D182590F45C00647E86 /* DataError.swift in Sources */,
 				AAA2033A258B8730003B4FA7 /* Client.swift in Sources */,
+				AA868A60258F8FF10053585E /* CustomTextfield.swift in Sources */,
 				AA46BAA0258ABF5C00B91585 /* AppState.swift in Sources */,
 				AAA20355258BA8DC003B4FA7 /* AppEventHandler.swift in Sources */,
 				AA6B743E258A31980019E6D8 /* MovieListInteractor.swift in Sources */,
 				AA86BF1E258D28CC007FD274 /* R.generated.swift in Sources */,
+				AAA37D1D2590F48900647E86 /* AppError.swift in Sources */,
 				AAA2034F258BA599003B4FA7 /* ProcessInfo.swift in Sources */,
 				AA86BF0B258D1C0A007FD274 /* AuthenticationInteractor.swift in Sources */,
 				AA86BF08258D1BF5007FD274 /* AuthenticationView.swift in Sources */,

@@ -24,9 +24,10 @@ extension DIContainer {
         }
 
         static var stub: Self {
+            let dataValidator = DataValidator()
             let viewModel = AuthenticationViewModel()
             let presenter = AuthenticationPresenter(viewModel: viewModel)
-            let interactor = AuthenticationInteractor(presenter: presenter)
+            let interactor = AuthenticationInteractor(presenter: presenter, dataValidator: dataValidator)
             return .init(authenticationInteractor: interactor, authenticationPresenter: presenter, authenticationViewModel: viewModel)
         }
     }
